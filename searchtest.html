@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="searchstands.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="searchstands.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				prepareSearch($('#searchBox'), {
+					'searchLine' : '.searchTarget div.product',
+					'searchSightPoint' : 'div.stand, span.apron, div.aircraft',
+					'fade' : false, //true or false
+					'contrastString' : false	//true or false
+				});
+			});
+		</script>
+    </head>
+	<body>
+			<div class="row" id="standsearch">
+				<form class="form-search" action="#standsearch">
+					<div class="input-append">
+						<input type="text" id="searchBox" class="span2 search-query" placeholder="Search">
+						<button type="btn" class="btn">
+                            <p>Find</p>
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<div class="searchTarget">
+					<div class="product span3">
+						<div class="stand">
+							Stand 100
+						</div>
+                        <span class="apron">West Apron</span>
+                        <div class="aircraft">
+							B748
+                        </div>
+                        <div>
+							<img src="dhl.png" class="image">
+						</div>
+					</div>
+					<div class="product span3">
+						<div class="stand">
+							Stand 101
+						</div>
+                        <span class="apron">West Apron</span>
+                        <div class="aircraft">
+							B748
+                        </div>
+                        <div>
+							<img src="dhl.png" class="image">
+						</div>
+					</div>
+					<div class="product span3">
+						<div class="stand">
+							Stand 102
+						</div>
+                        <span class="apron">West Apron</span>
+                        <div class="aircraft">
+							B748
+                        </div>
+                        <div>
+							<img src="dhl.png" class="image">
+						</div>
+					</div>
+					<div class="product span3">
+						<div class="stand">
+							Stand 103
+						</div>
+                        <span class="apron">West Apron</span>
+                        <div class="aircraft">
+							B748
+                        </div>
+                        <div>
+							<img src="dhl.png" class="image">
+						</div>
+					</div>
+					<div class="product span3">
+						<div class="stand">
+							Stand 104
+						</div>
+                        <span class="apron">West Apron</span>
+                        <div class="aircraft">
+							B748
+                        </div>
+                        <div>
+							<img src="dhl.png" class="image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
