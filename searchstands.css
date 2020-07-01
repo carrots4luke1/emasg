@@ -1,0 +1,63 @@
+.contrastString{
+	background-color: yellow;
+	font-weight: bold;
+}
+.borderBlack{
+	border: 1px solid black;
+}
+.product{
+	width: 44%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin: 8px;
+	padding: 7px;
+	background: rgb(240, 240, 240);
+	border: 1px solid #ebebeb;
+	-webkit-transition: box-shadow .3s;
+	-moz-transition: box-shadow .3s;
+	transition: box-shadow .3s;
+	-webkit-box-shadow: 0 0 3px 0 #E9E9E9;
+	-moz-box-shadow: 0 0 3px 0 #E9E9E9;
+	box-shadow: 0 0 3px 0 #E9E9E9;
+	margin-left: auto;
+	margin-right: auto;
+}
+.product .image{
+	max-height: 25px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 4px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.product .stand{
+	width: 100%;
+	text-align: center;
+	font-size:16px;
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-weight: bold;
+}
+.product .apron{
+	display: block;
+	font-size:12px;
+	font-family:"Segoe UI",Arial,sans-serif;
+}
+.product .aircraft{
+	display: block;
+	font-size:14px;
+	font-family:"Segoe UI",Arial,sans-serif;
+}
+.btnsearch,.buttonsearch{
+	border:none;
+	margin-top: 0;
+	padding-top: 0;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:black;
+    background-color:rgb(210,212,214);
+    text-align:center;
+    cursor:pointer;
+}

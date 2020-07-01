@@ -226,7 +226,163 @@
               <td><img src="27.jpg" style="width:100%;max-width:85px"></td>
               <td><img src="27.jpg" style="width:100%;max-width:85px"></td>
             </tr>
-          </table>
+          </table></div></body>
+    <div class="card">
+      <h3>Stand Information</h3>
+      <p>Use this to search for information on the aircraft stands at East Midlands Airport.</p>
+      <head>
+        <link rel="stylesheet" href="searchstands.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="searchstands.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            prepareSearch($('#searchBox'), {
+              'searchLine' : '.searchTarget div.product',
+              'searchSightPoint' : 'div.stand, span.apron, div.aircraft',
+              'fade' : false, //true or false
+              'contrastString' : false	//true or false
+            });
+          });
+        </script>
+        </head>
+      <body>
+          <div class="row" id="standsearch">
+            <form class="form-search" action="#standsearch">
+              <div class="input-append">
+                <input type="text" id="searchBox" class="span2 search-query" placeholder="Search">
+                <button type="btnsearch" class="btnsearch">
+                                <p>Find</p>
+                </button>
+              </div>
+            </form>
+          </div>
+          <center><div class="row">
+            <div class="searchTarget">
+              <div class="product span3">
+                <div class="stand">
+                  Stand 100
+                </div>
+                            <span class="apron">West Apron</span>
+                            <div class="aircraft">
+                  B748
+                            </div>
+                            <div>
+                  <img src="dhl.png" class="image">
+                </div>
+              </div>
+              <div class="product span3">
+                <div class="stand">
+                  Stand 101
+                </div>
+                            <span class="apron">West Apron</span>
+                            <div class="aircraft">
+                  B748
+                            </div>
+                            <div>
+                  <img src="dhl.png" class="image">
+                </div>
+              </div>
+              <div class="product span3">
+                <div class="stand">
+                  Stand 102
+                </div>
+                            <span class="apron">West Apron</span>
+                            <div class="aircraft">
+                  B748
+                            </div>
+                            <div>
+                  <img src="dhl.png" class="image">
+                </div>
+              </div>
+              <div class="product span3">
+                <div class="stand">
+                  Stand 103
+                </div>
+                            <span class="apron">West Apron</span>
+                            <div class="aircraft">
+                  B748
+                            </div>
+                            <div>
+                  <img src="dhl.png" class="image">
+                </div>
+              </div>
+              <div class="product span3">
+                <div class="stand">
+                  Stand 104
+                </div>
+                            <span class="apron">West Apron</span>
+                            <div class="aircraft">
+                  B748
+                            </div>
+                            <div>
+                  <img src="dhl.png" class="image">
+                </div>
+              </div>
+              <div class="product span3">
+              <div class="stand">
+                Stand 105
+              </div>
+                          <span class="apron">West Apron</span>
+                          <div class="aircraft">
+                B748
+                          </div>
+                          <div>
+                <img src="dhl.png" class="image">
+              </div>
+            </div>
+            <div class="product span3">
+              <div class="stand">
+                Stand 106
+              </div>
+                          <span class="apron">West Apron</span>
+                          <div class="aircraft">
+                B748
+                          </div>
+                          <div>
+                <img src="dhl.png" class="image">
+              </div>
+            </div>
+            <div class="product span3">
+              <div class="stand">
+                Stand 107
+              </div>
+                          <span class="apron">West Apron</span>
+                          <div class="aircraft">
+                B748
+                          </div>
+                          <div>
+                <img src="dhl.png" class="image">
+              </div>
+            </div>
+            <div class="product span3">
+              <div class="stand">
+                Stand 108
+              </div>
+                          <span class="apron">West Apron</span>
+                          <div class="aircraft">
+                B748
+                          </div>
+                          <div>
+                <img src="dhl.png" class="image">
+              </div>
+            </div>
+            <div class="product span3">
+              <div class="stand">
+                Stand 109
+              </div>
+                          <span class="apron">West Apron</span>
+                          <div class="aircraft">
+                B748
+                          </div>
+                          <div>
+                <img src="dhl.png" class="image">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </body></center>
+    </div>
     
           <script src="https://api.checkwx.com/widget?key=a04a8e5eff55f4fb5bf508f0ff" type="text/javascript"></script>
 </body>
