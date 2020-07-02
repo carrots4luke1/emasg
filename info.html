@@ -234,10 +234,12 @@
         <link rel="stylesheet" href="searchstands.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="bootstrap.js"></script>
-        <script type="text/javascript" src="bootstrap.min.js"></script>
         <script type="text/javascript" src="searchstands.js"></script>
         <script type="text/javascript">
           $(document).ready(function() {
+            $('#standsearch').submit(function(e) {
+            e.preventDefault();
+            });
             prepareSearch($('#searchBox'), {
               'searchLine' : '.searchTarget div.product',
               'searchSightPoint' : 'div.stand, span.apron, div.aircraft',
@@ -384,8 +386,6 @@
         </div>
       </body></center>
     </div>
-    
-          <script src="https://api.checkwx.com/widget?key=a04a8e5eff55f4fb5bf508f0ff" type="text/javascript"></script>
 </body>
 </html>
 
