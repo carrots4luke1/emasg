@@ -237,14 +237,14 @@
         <script type="text/javascript" src="searchstands.js"></script>
         <script type="text/javascript">
           $(document).ready(function() {
-            $('#standsearch').submit(function(e) {
-            e.preventDefault();
-            });
             prepareSearch($('#searchBox'), {
               'searchLine' : '.searchTarget div.product',
               'searchSightPoint' : 'div.stand, span.apron, div.aircraft',
               'fade' : true, //true or false
               'contrastString' : false	//true or false
+            });
+            $('#standsearch').submit(function(e) {
+            e.preventDefault();
             });
           });
         </script>
