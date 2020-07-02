@@ -254,8 +254,17 @@
             <form class="form-search" action="#standsearch">
               <div class="input-append">
                 <input type="text" id="searchBox" class="span2 search-query" placeholder="Search">
-                <button type="button" class="btnsearch">Find
+                <button type="button" id="btn" class="btnsearch">Find
                 </button>
+                <script>
+                  var input = document.getElementById("searchBox");
+                  input.addEventListener("keyup", function(event) {
+                    if (event.keyCode === 13) {
+                     event.preventDefault();
+                     document.getElementById("btn").click();
+                    }
+                  });
+                  </script>
               </div>
             </form>
           </div>
