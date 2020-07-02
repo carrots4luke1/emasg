@@ -51,8 +51,7 @@
 }
 .btnsearch,.buttonsearch{
 	border:none;
-	margin-top: 0;
-	padding-top: 0;
+	padding: 10px;
     vertical-align:middle;
     overflow:hidden;
     text-decoration:none;
