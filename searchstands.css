@@ -6,7 +6,7 @@
 	border: 1px solid black;
 }
 .product{
-	width: 44%;
+	width: 19%;
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
@@ -62,4 +62,54 @@
     background-color:rgb(210,212,214);
     text-align:center;
     cursor:pointer;
+}
+@media screen and (max-width: 480px) {
+	.product{
+		width: 44%;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		margin: 8px;
+		padding: 7px;
+		background: rgb(240, 240, 240);
+		border: 1px solid #ebebeb;
+		-webkit-transition: box-shadow .3s;
+		-moz-transition: box-shadow .3s;
+		transition: box-shadow .3s;
+		-webkit-box-shadow: 0 0 3px 0 #E9E9E9;
+		-moz-box-shadow: 0 0 3px 0 #E9E9E9;
+		box-shadow: 0 0 3px 0 #E9E9E9;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (max-width: 370px) {
+	.product{
+		width: 44%;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		margin: 8px;
+		padding: 7px;
+		background: rgb(240, 240, 240);
+		border: 1px solid #ebebeb;
+		-webkit-transition: box-shadow .3s;
+		-moz-transition: box-shadow .3s;
+		transition: box-shadow .3s;
+		-webkit-box-shadow: 0 0 3px 0 #E9E9E9;
+		-moz-box-shadow: 0 0 3px 0 #E9E9E9;
+		box-shadow: 0 0 3px 0 #E9E9E9;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.product .image{
+		max-width: 35px;
+		max-height: 22px;
+		display: block;
+		margin-top: 3px;
+		margin-bottom: 5px;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
