@@ -63,7 +63,7 @@
     text-align:center;
     cursor:pointer;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 	.product{
 		width: 44%;
 		text-align: center;
