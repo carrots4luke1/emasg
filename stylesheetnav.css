@@ -19,8 +19,8 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
 }
 .card2 {
     background-color: white;
-    padding: 2.5px;
-    padding-top: 2.5px;
+    padding: 0px;
+    padding-top: 0px;
     margin-top: 20px;
     }
 .tip {
@@ -61,6 +61,20 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     font-family: arial;
 }
+.smartbox2{
+	width: 13.5%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin: 8px;
+	padding: 7px;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    font-family: arial;
+}
 .smartbox.airline{
 	width: 100%;
 	text-align: center;
@@ -88,6 +102,25 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
 	font-size:14px;
 	font-family:"Segoe UI",Arial,sans-serif;
 }
+.smartbox2.amimage{
+	display: block;
+	font-size:12px;
+    font-family:"Segoe UI",Arial,sans-serif;
+    max-width: 10px;
+}
+.smartbox2.pmimage{
+	display: block;
+	font-size:12px;
+    font-family:"Segoe UI",Arial,sans-serif;
+    max-width: 10px;
+}
+.smartbox2.day{
+	display: block;
+	font-size:12px;
+    font-family:"Segoe UI",Arial,sans-serif;
+    max-width: 10px;
+    font-weight: bold;
+}
 @media screen and (max-width: 720px) {
 	.smartbox{
 		width: 99%;
@@ -107,7 +140,21 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
 		border: none;
         box-shadow: 0 0 20px rgba(0,0,0,.1);
         font-family: arial;
-	}
+    }
+    .smartbox2{
+        width: 49%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        margin: 8px;
+        padding: 7px;
+        background: white;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        box-shadow: 0 0 20px rgba(0,0,0,.1);
+        font-family: arial;
+    }
 }
 .logo{
     width:100%;

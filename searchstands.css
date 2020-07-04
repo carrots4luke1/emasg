@@ -60,9 +60,10 @@
     overflow:hidden;
     text-decoration:none;
     color:black;
-    background-color:rgb(210,212,214);
+    background-color:rgb(233, 233, 233);
     text-align:center;
-    cursor:pointer;
+	cursor:pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
 @media screen and (max-width: 720px) {
 	.product{
