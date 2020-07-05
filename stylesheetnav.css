@@ -241,6 +241,7 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     right: 0; 
     top: 0;
     float:center;
+    z-index: 1;
 }
 .bar-block.bar-item{
     width:100%;
@@ -281,10 +282,10 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
         max-width:80px;
     }
     .bar{
-        margin: 0 0 0 0;
         width: 100%;
         overflow:hidden;
         top:0;
+        margin: 0 0 0 0;
     }
     .fixed{
         position:fixed;
@@ -293,6 +294,7 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
         right: 0; 
         top: 0;
         float:center;
+        z-index: 1;
     }
     
     .bar.bar-item{
@@ -319,7 +321,8 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     }
     a{font-size: 13px;}
     html{box-sizing:border-box;margin-top:30px}*,*:before,*:after{box-sizing:inherit}
-    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0; border-right-style: solid;
+    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+    body{margin:0; border-right-style: solid;
         border-right-color: #296c92;border-right-width: 20px;border-left-style: solid;
         border-left-color: #296c92;border-left-width: 20px;overflow-x:hidden;}
 }

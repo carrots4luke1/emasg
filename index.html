@@ -7,18 +7,144 @@
     <link rel="icon" href="icon.png">
 </head>
 <body>
-    <center><meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheetnav.css">
+  <center><meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="stylesheetnav.css">
+      <body>
+      <div class="bar fixed white">
+          <div content="device-width"></div>
+              <div align="left"><a href="index.html"><img class="logo" src="site-logo.png" alt="East Midlands Spotting Guide"></a>   
+        <a href="index.html" class="bar-item button">Home</a>
+        <a href="info.html" class="bar-item button">Info</a>
+        <a href="spottinglocations.html" class="bar-item button">Spots</a>
+        <a href="news.html" class="bar-item button">News</a></div>
+      </div></center>
+  
+  </body>
+    <!-- Main Website Body -->
     <body>
-    <div class="bar fixed white">
-        <div content="device-width"></div>
-            <div align="left"><a href="index.html"><img class="logo" src="site-logo.png" alt="East Midlands Spotting Guide"></a>   
-      <a href="index.html" class="bar-item button">Home</a>
-      <a href="info.html" class="bar-item button">Info</a>
-      <a href="spottinglocations.html" class="bar-item button">Spots</a>
-      <a href="news.html" class="bar-item button">News</a></div>
-    </div></center>
-    <!-- Main Website Body -->  
+      <style>
+      * {box-sizing: border-box}
+      .Slide {display: none;}
+      img {vertical-align: middle;}
+      .slideshow-container {
+        width: 100%;
+        margin-top: 30px;
+      }
+      .text {
+        color: #f2f2f2;
+        font-size: 25px;
+        bottom: 8px;
+        text-align: center;
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        position: relative;
+      }
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      @media only screen and (max-width: 480px) {
+      .dot {
+        cursor: pointer;
+        height: 7px;
+        width: 7px;
+        margin: 0px 1px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        position: relative;
+      }
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      }
+      </style>
+      <center><div class="slideshow-container">
+      <div class="Slide fade">
+        <img src="banner1.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+      <div class="Slide fade">
+        <img src="banner2.jpeg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      <div class="Slide fade">
+        <img src="banner3.jpeg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      </div></center>
+      <div style="text-align:center;margin-top:-25px">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>    
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);   
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }   
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }   
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("Slide");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("Slide");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); 
+      }
+      </script>
+      </div>
+      </body>
     <div class="card">
       <h3>The Detailed Guide To Spotting At East Midlands Airport</h3>
       <div><p>This website is designed with the Spotters of East Midlands Airport in mind. 
@@ -57,10 +183,10 @@
       <hr>
       <div class="tip">
         <img src="icon.png" class="tipicon">
-        <p class="tiptext"><b>TIP -</b> Use <a href="https://www.flightradar24.com/airport/ema">FlightRadar24</a>
+        <p class="tiptext"><b>TIP -</b> Use <a class="tiplink" href="https://www.flightradar24.com/airport/ema">FlightRadar24</a>
            to get more accurate arrival and departure times.</p>
         <style>
-          a {
+          .tiplink {
             color: #296c92;
             background-color: transparent;
             text-decoration: none;
