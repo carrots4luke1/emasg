@@ -386,6 +386,7 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     .bar a.icon {
       float: right;
       display: block;
+      font-size: 19px;
     }
     .bar.responsive .icon {
       position: absolute;
@@ -408,7 +409,7 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     }
     .bar.responsive a:last-child {
         float: none;
-        padding-bottom: 20px;
+        margin-bottom: 5px;
         text-align: center;
     }
     .logo {
@@ -417,6 +418,7 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
         margin-top:-16px;
         margin-bottom:-16px;
         padding-bottom: 5px;
+        padding-top:2px;
     }
     .bar a {
       float: left;
