@@ -6,19 +6,28 @@
     <title>News</title>
 </head>
 <body>
-    <center><meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheetnav.css">
-        <body>
-        <div class="bar fixed white">
-            <div content="device-width"></div>
-                <div align="left"><a href="index.html"><img class="logo" src="site-logo.png" alt="East Midlands Spotting Guide"></a>   
-          <a href="index.html" class="bar-item button">Home</a>
-          <a href="info.html" class="bar-item button">Info</a>
-          <a href="spottinglocations.html" class="bar-item button">Spots</a>
-          <a href="news.html" class="bar-item button">News</a></div>
-        </div></center>
-    
-    </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="stylesheetnav.css">
+      <div class="bar fixed white" id="Navbar">
+          <div content="device-width"></div>
+              <div align="left"><a href="index.html"><img class="logo" src="site-logo.png" alt="East Midlands Spotting Guide"></a>   
+        <a href="index.html">Home</a>
+        <a href="info.html">Info</a>
+        <a href="spottinglocations.html">Spots</a>
+        <a href="news.html">News</a></div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+<script>
+function myFunction() {
+var x = document.getElementById("Navbar");
+if (x.className === "bar fixed white") {
+  x.className += " responsive";
+} else {
+  x.className = "bar fixed white";
+}
+}
+</script>
+</body>
     <head>
         <style>
             * {
