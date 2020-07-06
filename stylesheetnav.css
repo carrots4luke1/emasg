@@ -380,13 +380,14 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
   .bar .icon {
     display: none;
     color:black;
+    margin-top:-3px;
+    
   }
   @media screen and (max-width: 600px) {
     .bar a:not(:nth-child(-n + 3)) {display: none;}
     .bar a.icon {
       float: right;
       display: block;
-      font-size: 19px;
     }
     .bar.responsive .icon {
       position: absolute;
