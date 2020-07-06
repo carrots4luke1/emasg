@@ -55,6 +55,19 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     text-align: center;
     speak-as: none;
 }
+.mapicon {
+    width: 30px;
+    display: inline-block;
+    opacity: 1;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    font-family: Icons;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: inherit;
+    text-align: center;
+    speak-as: none;
+}
 .smartbox{
 	width: 19%;
 	text-align: center;
@@ -251,6 +264,10 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     float:center;
     z-index: 1;
 }
+.apron {
+    width:100%;
+    max-width:380px;
+}
 .bar-block.bar-item{
     width:100%;
     display:block;
@@ -380,7 +397,7 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
   .bar .icon {
     display: none;
     color:black;
-    margin-top:-3px;
+    margin-top:-5px;
     
   }
   @media screen and (max-width: 600px) {
@@ -434,3 +451,11 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
       margin-left: -10px;
   }
   }
+/* Spotting Page */
+.spotsmap {
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.158);
+    margin-bottom:-20px;
+    margin-top:20px;
+}
