@@ -459,3 +459,72 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     margin-bottom:-20px;
     margin-top:20px;
 }
+.containerspotting {
+    padding:0px 0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.containerspotting:after,.containerspotting:before {
+    content:"";
+    display:table;
+    clear:both;
+}
+.btnspotting {
+    width:100%;
+    display:inline-block;
+    padding:20px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    background: #f9f9f9;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    text-align:left;
+    border: 1px solid #d3d3d3;
+    font-family:sans-serif;
+    font-size: 1.25em;
+    font-style: bold;
+    color: rgba(0,0,0,.87);
+    transition: 0.8s;
+}
+.btnspotting:hover {
+    background-color: #296c92!important;
+    color: white!important;
+    content: '\f072';
+    
+}
+.btnspotting,.buttonspotting{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}   
+.spotting-disabled,.btnspotting:disabled,.buttonspotting:disabled{
+    cursor:not-allowed;opacity:0.3;
+}
+.spotting-disabled *,:disabled *{pointer-events:none}
+.hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
+.hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
+@media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
+@media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}.auto{max-width:100%}}
+.bar-block .bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bar-block.center .bar-item{text-align:center}.block{display:block;width:100%}
+.btnspotting:after {
+    content: '\f072';
+    color: rgb(32, 32, 32);
+    transform: rotate(0deg) translateY(0);
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    transition: transform .5s;
+    transform: rotate(90deg) translateY(0);
+    color: white!important;
+  }

@@ -192,7 +192,64 @@ function myFunction() {
               }
               </style>
          </div></div></body></div>
-        <div class="card">
+         <div class="card">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="stylesheetnav.css"> 
+         <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+         <div class="containerspotting"> 
+          <button onclick="myFunction('showspots27')" class="btnspotting block black" style="margin-top: 20px;">Runway 27 - (1-5)</button>
+          <div id="showspots27" class="containerspotting hide">
+            <h4>Runway 27 Spotting Locations</h4>
+            <p>Some text..</p>
+          </div>
+          
+          </div>
+          <div class="containerspotting"> 
+            <button onclick="myFunction('showspots09')" class="btnspotting block black">Runway 09 - (10-17)</button>
+            <div id="showspots09" class="containerspotting hide">
+              <h4>Runway 09 Spotting Locations</h4>
+              <p>Some text..</p>
+            </div>
+            
+            </div>
+          <div class="containerspotting"> 
+            <button onclick="myFunction('showspotsother')" class="btnspotting block black">Other - (6-8)</button>
+            <div id="showspotsother" class="containerspotting hide">
+              <h4>Other Spotting Locations</h4>
+              <p>Some text..</p>
+            </div>
+            
+            </div>
+            <style>
+              button:focus {
+              border: 1px solid #d3d3d3;
+              outline: none;
+}
+              </style>
+          <script>
+          function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("show") == -1) {
+              x.className += " show";
+            } else { 
+              x.className = x.className.replace(" show", "");
+            }
+          }
+          var icon = document.getElementsByClassName("btnspotting");
+          var i;
+
+          for (i = 0; i < icon.length; i++) {
+            icon[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var containerspotting = this.nextElementSibling;
+              if (containerspotting.style.display === "block") {
+                containerspotting.style.display = "none";
+              } else {
+                containerspotting.style.display = "block";
+              }
+            });
+          }
+          </script>
         <p>
         The following details the best and most popular spots around the airport for spotting.</p>
         <div class="smartbox">
