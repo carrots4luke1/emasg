@@ -197,26 +197,87 @@ function myFunction() {
          <link rel="stylesheet" href="stylesheetnav.css"> 
          <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
          <div class="containerspotting"> 
-          <button onclick="myFunction('showspots27')" class="btnspotting block black" style="margin-top: 20px;">Runway 27 - (1-5)</button>
+          <button onclick="myFunction('showspots27')" class="btnspotting block black" style="margin-top: 20px;">Runway 27 (5)</button>
           <div id="showspots27" class="containerspotting hide">
-            <h4>Runway 27 Spotting Locations</h4>
-            <p>Some text..</p>
+            <div class="containerspotting"> 
+              <button onclick="myFunction('showspots1')" class="btnspotting2 block black" 
+              style="border-top:2px solid #296c92;">Airport Trail (Touchdown)</button>
+              <div id="showspots1" class="containerspotting hide">
+                <p>Testinggggg...</p>
+              </div></div>
+            <div class="containerspotting"> 
+              <button onclick="myFunction('showspots2')" class="btnspotting2 block black">East Midlands Gateway</button>
+              <div id="showspots2" class="containerspotting hide">
+              </div></div>
+            <div class="containerspotting"> 
+              <button onclick="myFunction('showspots3')" class="btnspotting2 block black">End of Runway 27</button>
+              <div id="showspots3" class="containerspotting hide">
+              </div></div>
+            <div class="containerspotting"> 
+              <button onclick="myFunction('showspots4')" class="btnspotting2 block black">Carpark Mound</button>
+              <div id="showspots4" class="containerspotting hide">
+              </div></div>
+            <div class="containerspotting"> 
+              <button onclick="myFunction('showspots5')" class="btnspotting2 block black" 
+              style="border-bottom:2px solid #296c92;">Radisson Blu</button>
+              <div id="showspots5" class="containerspotting hide">
+              </div></div>
           </div>
-          
           </div>
           <div class="containerspotting"> 
-            <button onclick="myFunction('showspots09')" class="btnspotting block black">Runway 09 - (10-17)</button>
+            <button onclick="myFunction('showspots09')" class="btnspotting block black">Runway 09 (7)</button>
             <div id="showspots09" class="containerspotting hide">
-              <h4>Runway 09 Spotting Locations</h4>
-              <p>Some text..</p>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots6')" class="btnspotting2 block black" 
+                style="border-top:2px solid #296c92;">Western View</button>
+                <div id="showspots6" class="containerspotting hide">
+                  <p>Testinggggg...</p>
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots7')" class="btnspotting2 block black">DHL Apron View</button>
+                <div id="showspots7" class="containerspotting hide">
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots8')" class="btnspotting2 block black">DHL Mound</button>
+                <div id="showspots8" class="containerspotting hide">
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots9')" class="btnspotting2 block black">Roundabout</button>
+                <div id="showspots9" class="containerspotting hide">
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots10')" class="btnspotting2 block black">East Midlands Aeropark</button>
+                <div id="showspots10" class="containerspotting hide">
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots11')" class="btnspotting2 block black">Diseworth Road</button>
+                <div id="showspots11" class="containerspotting hide">
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots12')" class="btnspotting2 block black" 
+                style="border-bottom:2px solid #296c92;">Airport Trail (Touchdown)</button>
+                <div id="showspots12" class="containerspotting hide">
+                </div></div>
             </div>
-            
             </div>
           <div class="containerspotting"> 
-            <button onclick="myFunction('showspotsother')" class="btnspotting block black">Other - (6-8)</button>
+            <button onclick="myFunction('showspotsother')" class="btnspotting block black">Others (3)</button>
             <div id="showspotsother" class="containerspotting hide">
-              <h4>Other Spotting Locations</h4>
-              <p>Some text..</p>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots14')" class="btnspotting2 block black" 
+                style="border-top:2px solid #296c92;">Paintshop</button>
+                <div id="showspots14" class="containerspotting hide">
+                  <p>Testinggggg...</p>
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots15')" class="btnspotting2 block black">Air Ambulance</button>
+                <div id="showspots15" class="containerspotting hide">
+                </div></div>
+              <div class="containerspotting"> 
+                <button onclick="myFunction('showspots16')" class="btnspotting2 block black" 
+                style="border-bottom:2px solid #296c92;">West Atlantic Hangar</button>
+                <div id="showspots16" class="containerspotting hide">
+                </div></div>
             </div>
             
             </div>
@@ -224,8 +285,8 @@ function myFunction() {
               button:focus {
               border: 1px solid #d3d3d3;
               outline: none;
-}
-              </style>
+            }
+            </style>
           <script>
           function myFunction(id) {
             var x = document.getElementById(id);
@@ -247,18 +308,23 @@ function myFunction() {
               } else {
                 containerspotting.style.display = "block";
               }
-            });
-          }
+            });}
           </script>
-        <p>
-        The following details the best and most popular spots around the airport for spotting.</p>
-        <div class="smartbox">
-          <div class="airline"><b>Spot:</b> EMA Gateway</div>
-          <div class="aircraft"><b>Runway:</b> 27</div>
-          <div class="date"><b></b> 05/07/2020</div>
-          <div class="arrival"><b>ETA:</b> 14:30</div>
-          <div class="departure"><b>ETD:</b> 16:30</div>
-        </div></div>
+          <script>
+            var icon = document.getElementsByClassName("btnspotting2");
+          var i;
+
+          for (i = 0; i < icon.length; i++) {
+            icon[i].addEventListener("click", function() {
+              this.classList.toggle("active2");
+              var containerspotting = this.nextElementSibling;
+              if (containerspotting.style.display === "block") {
+                containerspotting.style.display = "none";
+              } else {
+                containerspotting.style.display = "block";
+              }
+            });}
+          </script>
     </div> 
 </body>
 </html>
