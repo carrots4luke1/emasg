@@ -197,6 +197,11 @@ function myFunction2() {
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="stylesheet" href="stylesheetnav.css"> 
          <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+         <div class="tip">
+          <img src="icon.png" class="tipicon">
+          <p class="tiptext"><b>TIP -</b> The runway number corresponds to the runway heading. 
+            For example, runway 27 has a heading of 270 degrees and runway 09 has a heading of 090 degrees.</p>
+        </div>
          <div class="containerspotting"> 
           <button onclick="myFunction('showspots27')" class="btnspotting block black" style="margin-top: 20px;">Runway 27 (5)</button>
           <div id="showspots27" class="containerspotting hide">
@@ -204,8 +209,34 @@ function myFunction2() {
               <button onclick="myFunction('showspots1')" class="btnspotting2 block black" 
               style="border-top:2px solid #296c92;">Airport Trail (Touchdown)</button>
               <div id="showspots1" class="containerspotting hide">
-                <p>Testinggggg...</p>
-              </div></div>
+                <div class="spotcontainer">
+                <h3><a class="spottitlelink" href="https://www.flightradar24.com/airport/ema">Airport Trail (Spot 1)</a></h3>
+
+                <i class="fa fa-location-arrow" aria-hidden="true" 
+                style="margin-top:10px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext">This spot is located on the northern side of the airport roughly 0.6 miles or 
+                  the equivalent of an 11 minute walk along the Airport Trail Path which 
+                  follows the airfield boundary along the northern side of the airport. </p>
+                <i class="fa fa-bus" aria-hidden="true" 
+                style="margin-top:5px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext">Firstly, you need to reach East Midlands Gateway. To do this by car, exit the A453 at 
+                  East Midlands Gateway and park along the inclined road leading 
+                  up to the crash gate. By bus, take the Skylink Express, Skylink Nottingham or Skylink Leicester/Derby 
+                  to East Midlands Gateway (4th stop from the terminal). Once you are there, follow the Airport 
+                  Trail Path along the northern perimeter for roughly 11 minutes (0.6 miles). It is possible to only walk to 
+                  this spot, however it would take upwards of an hour to reach and so is not recommended.</p>
+                <i class="fa fa-camera" aria-hidden="true" 
+                style="margin-top:3px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext">At this spot you will see aircraft touching down on runway 27 as well as departures 
+                  from runway 09. You will also have a view of the Eastern Apron as well as aircraft taxiing to/from the runway.</p>
+                <i class="fa fa-info-circle" aria-hidden="true" 
+                style="margin-top:3px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext">This spot is best for lighting on Summer evenings after 17:00 and 
+                  summer mornings before 09:00.<br>A ladder is useful here since the fence is high, however the holes 
+                  in the fence are large enough to take pictures through using most cameras.<br>A focal length of 70-300mm 
+                  would best suit this spot.<br>The nearest restrooms are at the East Midlands Gateway bus stop and the 
+                  nearest shops are at the main terminal itself.</p>
+              </div></div></div>
             <div class="containerspotting"> 
               <button onclick="myFunction('showspots2')" class="btnspotting2 block black">East Midlands Gateway</button>
               <div id="showspots2" class="containerspotting hide">
@@ -280,8 +311,7 @@ function myFunction2() {
                 <div id="showspots16" class="containerspotting hide">
                 </div></div>
             </div>
-            
-            </div>
+        
             <style>
               button:focus {
               border: 1px solid #d3d3d3;
