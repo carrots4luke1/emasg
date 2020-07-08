@@ -315,7 +315,6 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     .fixed{
         position:fixed;
         overflow:hidden;
-        border-bottom:5px solid #296c92;
         right: 0; 
         top: 0;
         float:center;
@@ -388,10 +387,14 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     text-decoration: none;
     font-size: 14px;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
   }
   .bar a:hover {
     background-color: #296c92;
+    color: white;
+  }
+  .bar a:first-child {
+    background-color: white;
     color: white;
   }
   .bar .icon {
@@ -418,12 +421,12 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
     }
     .bar.responsive a:nth-child(-n + 2) {
         float: none;
-        padding-top: 50px;
+        margin-top: 50px;
         text-align: center;
     }
     .bar.responsive a:first-child {
         float: left;
-        padding-top: 10px;
+        margin-top: -50px;
     }
     .bar.responsive a:last-child {
         float: none;
@@ -447,7 +450,7 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
       text-decoration: none;
       font-size: 14px;
       margin-top: 0px;
-      margin-bottom: -5px;
+      margin-bottom: -6px;
       margin-left: -10px;
   }
   }
