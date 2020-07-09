@@ -28,129 +28,19 @@ function myFunction2() {
 }
 </script>
 <body>
-  <style>
-  * {box-sizing: border-box}
-  .Slide {display: none;}
-  img {vertical-align: middle;}
-  .slideshow-container {
-    width: 100%;
-    margin-top: 30px;
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
+<style>
+  .topimage {
+    padding-top:30px;
+    margin-bottom:-5px;
   }
-  .text {
-    color: #f2f2f2;
-    font-size: 25px;
-    bottom: 8px;
-    text-align: center;
-  }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0px 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    position: relative;
-  }
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  @media only screen and (max-width: 480px) {
-  .dot {
-    cursor: pointer;
-    height: 7px;
-    width: 7px;
-    margin: 0px 1px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    position: relative;
-  }
-  .active, .dot:hover {
-    background-color: #717171;
+  @media screen and (max-width:480px) {
+    .topimage {
+    padding-top:25px;
+    margin-bottom:-2px;
   }
   }
-  </style>
-  <center><div class="slideshow-container">
-  <div class="Slide fade">
-    <img src="spotbanner3.jpeg" style="width:100%">
-    <div class="text"></div>
-  </div>
-  <div class="Slide fade">
-    <img src="spotbanner2.jpeg" style="width:100%">
-    <div class="text"></div>
-  </div>
-  <div class="Slide fade">
-    <img src="spotbanner1.jpeg" style="width:100%">
-    <div class="text"></div>
-  </div>
-  </div></center>
-  <div style="text-align:center;margin-top:-25px">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-  </div>    
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);   
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }   
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }   
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("Slide");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-  var slideIndex = 0;
-  showSlides();
-  function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("Slide");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); 
-  }
-  </script>
-  </div>
+</style>
+<div class="topimage"><img src="an124.png" style="width: 100%;"></div>
   </body>
 </body><body>
         <!-- Add a css template for each spot for consistency. -->
@@ -371,7 +261,65 @@ function myFunction2() {
             <div class="containerspotting"> 
               <button onclick="myFunction('showspots2')" class="btnspotting2 block black">East Midlands Gateway</button>
               <div id="showspots2" class="containerspotting hide">
-              </div></div>
+                <h3><a class="spottitlelink" href="https://www.flightradar24.com/airport/ema">Airport Trail (Spot 1)</a></h3>
+
+                <i class="fa fa-location-arrow" aria-hidden="true" 
+                style="margin-top:10px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext"><b>Where is it?</b> This spot is located on the northern side of the airport roughly 0.6 miles or 
+                  the equivalent of an 11 minute walk along the Airport Trail Path which 
+                  follows the airfield boundary along the northern side of the airport. </p>
+                <i class="fa fa-bus" aria-hidden="true" 
+                style="margin-top:5px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext"><b>How do I get there?</b> Firstly, you need to reach East Midlands Gateway. 
+                  To do this by car, exit the A453 at 
+                  East Midlands Gateway and park along the inclined road leading 
+                  up to the crash gate. By bus, take the Skylink Express, Skylink Nottingham or Skylink Leicester/Derby 
+                  to East Midlands Gateway (4th stop from the terminal). Once you are there, follow the Airport 
+                  Trail Path along the northern perimeter for roughly 11 minutes (0.6 miles). It is possible to walk to 
+                  this spot from the terminal, however it would take upwards of an hour to reach and so is not recommended.</p>
+                <i class="fa fa-camera" aria-hidden="true" 
+                style="margin-top:3px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext"><b>What will I see?</b> At this spot you will see aircraft touching down on runway 27 as well as departures 
+                  from runway 09. You will also have a view of the Eastern Apron as well as aircraft taxiing to/from the runway.</p>
+                <i class="fa fa-info-circle" aria-hidden="true" 
+                style="margin-top:3px;float:left;margin-left:5px;color:#296c92"></i>
+                <p class="locationtext"><b>Additional Info:</b> This spot is best for lighting on Summer evenings after 17:00 and 
+                  summer mornings before 09:00.<br>A ladder is useful here since the fence is high, however the holes 
+                  in the fence are large enough to take pictures through using most cameras.<br>A focal length of 70-300mm 
+                  would best suit this spot.<br>The nearest restrooms are at the East Midlands Gateway bus stop and the 
+                  nearest shops are at the main terminal itself.</p>
+                <img src="spot1location.png" class="spotlocationimage">
+                <body>
+                  <div class="row">
+                    <div class="column">
+                      <img src="banner1.png" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction4(this);">
+                    </div>
+                    <div class="column">
+                      <img src="spotbanner3.jpeg" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction4(this);">
+                    </div>
+                    <div class="column">
+                      <img src="spotbanner1.jpeg" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction4(this);">
+                    </div>
+                    <div class="column">
+                      <img src="spotbanner2.jpeg" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction4(this);">
+                    </div>
+                  </div>
+                  
+                  <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg2" style="width:100%">
+                    <div id="imgtext2"></div>
+                  </div>
+                  <script>
+                  function myFunction4(imgs) {
+                    var expandImg = document.getElementById("expandedImg2");
+                    var imgText1 = document.getElementById("imgtext2");
+                    expandImg.src = imgs.src;
+                    imgText1.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                  }
+                  </script></body>
+              </div>
             <div class="containerspotting"> 
               <button onclick="myFunction('showspots3')" class="btnspotting2 block black">End of Runway 27</button>
               <div id="showspots3" class="containerspotting hide">
