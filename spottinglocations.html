@@ -154,24 +154,44 @@ function myFunction2() {
   </body>
 </body><body>
         <!-- Add a css template for each spot for consistency. -->
+        <div class="card">
         <div class="polaroid">
-          <h3><a class="spottitlelink" style="margin-left: 20px;margin-top: 10px;" href="https://www.flightradar24.com/airport/ema">Spotting Locations</a></h3>
-          <div style="height:400px; width:100%; display:inline-block; overflow:hidden;"> 
+          <h3 style="padding-bottom: 15px;"><a class="maptitlelink" style="margin-left: 0px;" 
+            href="https://www.google.com/maps/d/edit?mid=1xiMjaSbNb6t3r6JXgXN9Y6MUOG304wih&usp=sharing">Spotting Locations</a></h3>
+          <div style="height:400px; width:100%; display:inline-block; overflow:hidden; border:5px solid #296c92;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);"> 
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xiMjaSbNb6t3r6JXgXN9Y6MUOG304wih&z=13" 
-            class="custom-google-map" style="position:relative; top:-50px; border-left:20px solid white;
-            border-right:20px solid white;" 
-
+            class="custom-google-map" style="position:relative; top:-50px; margin-left: 0px;
+            margin-right: 0px;" 
             width="100%" height="445"></iframe>
-            <div class="container"><p>East Midlands Airport Spotting Locations</p></div>
             <style>
               iframe {
                 max-height: 455px;
+                border-right:2px solid #296c92;
+                border-left:2px solid #296c92;
               }
               div.polaroid {
                 background-color: white;
+                padding-bottom: 10px;
+                padding-top: 1px;
+              }
+              .maptitlelink {
+                color: #296c92;
+                background-color: transparent;
+                text-decoration: none;
+                font-size: 30px;
+                width: 100%;
+                height: 1px;
+                border-bottom: 5px solid #296c92;
+                content: "";
+                margin-bottom: 10px;
+              }
+              .tipheading {
+                border: none;
+                background: #fff;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                padding-bottom: none;
-                max-height: 465px;
+                margin-bottom: -5px;
+                margin-top: 15px;
               }
               p.polaroidtitle {
                 color: #296c92;
@@ -188,22 +208,27 @@ function myFunction2() {
               }
               @media screen and (max-width: 420px) {
                 iframe {
-                max-height: 432px;
+                max-height: 455px;
               }
               div.polaroid {
                 background-color: white;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 padding-bottom: none;
                 max-height: 446px;
+              }
+              .tipheading {
+                border: none;
+                background: #fff;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: -5px;
+                margin-top: 60px;
               }
               }
               </style>
          </div></div></body>
-         <div class="card">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="stylesheet" href="stylesheetnav.css"> 
          <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-         <div class="tip">
+         <div class="tipheading">
           <img src="icon.png" class="tipicon">
           <p class="tiptext"><b>TIP -</b> The runway number corresponds to the runway heading. 
             For example, runway 27 has a heading of 270 degrees and runway 09 has a heading of 090 degrees.</p>
@@ -250,7 +275,6 @@ function myFunction2() {
                   }
                   body {
                     margin: 0;
-                    font-family: Arial;
                   }
                   .column {
                     float: left;
