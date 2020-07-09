@@ -10,6 +10,12 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 hr{border:0;border-top:1px solid #296c92;margin:10px 0}
 img{vertical-align:middle}a{color:inherit}
 ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
+@media screen and (max-width:480px) {
+    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0; border-right-style: solid;
+        border-right-color: #296c92;border-right-width: 7px;border-left-style: solid;
+        border-left-color: #296c92;border-left-width: 7px;overflow-x:hidden;}
+    html{background-color:#296c92;box-sizing:border-box;margin-top:25px}*,*:before,*:after{box-sizing:inherit}
+}
 /* Navigation Bar */
 .card {
     background-color: white;
@@ -344,11 +350,6 @@ ul{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;margin-top:0px;}
         width: 15%;
     }
     a{font-size: 13px;}
-    html{box-sizing:border-box;margin-top:30px}*,*:before,*:after{box-sizing:inherit}
-    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-    body{margin:0; border-right-style: solid;
-        border-right-color: #296c92;border-right-width: 20px;border-left-style: solid;
-        border-left-color: #296c92;border-left-width: 20px;overflow-x:hidden;}
 }
     @media screen and (max-width: 375px) {
         .smartbox2{

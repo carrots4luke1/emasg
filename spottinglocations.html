@@ -153,19 +153,19 @@ function myFunction2() {
   </div>
   </body>
 </body><body>
-    <div class="card" style="margin-top:15px;">
-        <h3>Spotting Locations</h3>
         <!-- Add a css template for each spot for consistency. -->
         <div class="polaroid">
-          <div class="container2"><p><img src="icon.png" class="mapicon">East Midlands Spotting Locations</p></div>
+          <h3><a class="spottitlelink" style="margin-left: 20px;margin-top: 10px;" href="https://www.flightradar24.com/airport/ema">Spotting Locations</a></h3>
           <div style="height:400px; width:100%; display:inline-block; overflow:hidden;"> 
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xiMjaSbNb6t3r6JXgXN9Y6MUOG304wih&z=13" 
-            class="custom-google-map" style="position:relative; top:-50px; border:none;" 
+            class="custom-google-map" style="position:relative; top:-50px; border-left:20px solid white;
+            border-right:20px solid white;" 
+
             width="100%" height="445"></iframe>
             <div class="container"><p>East Midlands Airport Spotting Locations</p></div>
             <style>
               iframe {
-                max-height: 445px;
+                max-height: 455px;
               }
               div.polaroid {
                 background-color: white;
@@ -173,16 +173,22 @@ function myFunction2() {
                 padding-bottom: none;
                 max-height: 465px;
               }
-              div.container2 {
-                text-align: center;
-                padding: 0.25px 2.5px;
-                font-size: 18px;
-                margin-top: 20px;
-                font-family: sans-serif;
+              p.polaroidtitle {
+                color: #296c92;
+                background-color: transparent;
+                text-decoration: none;
+                font-size: 30px;
+                width: 100%;
+                height: 1px;
+                border-bottom: 4px solid #296c92;
+                content: "";
+                margin-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 40px;
               }
               @media screen and (max-width: 420px) {
                 iframe {
-                max-height: 400px;
+                max-height: 432px;
               }
               div.polaroid {
                 background-color: white;
@@ -192,7 +198,7 @@ function myFunction2() {
               }
               }
               </style>
-         </div></div></body></div>
+         </div></div></body>
          <div class="card">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="stylesheet" href="stylesheetnav.css"> 
@@ -214,24 +220,25 @@ function myFunction2() {
 
                 <i class="fa fa-location-arrow" aria-hidden="true" 
                 style="margin-top:10px;float:left;margin-left:5px;color:#296c92"></i>
-                <p class="locationtext">This spot is located on the northern side of the airport roughly 0.6 miles or 
+                <p class="locationtext"><b>Where is it?</b> This spot is located on the northern side of the airport roughly 0.6 miles or 
                   the equivalent of an 11 minute walk along the Airport Trail Path which 
                   follows the airfield boundary along the northern side of the airport. </p>
                 <i class="fa fa-bus" aria-hidden="true" 
                 style="margin-top:5px;float:left;margin-left:5px;color:#296c92"></i>
-                <p class="locationtext">Firstly, you need to reach East Midlands Gateway. To do this by car, exit the A453 at 
+                <p class="locationtext"><b>How do I get there?</b> Firstly, you need to reach East Midlands Gateway. 
+                  To do this by car, exit the A453 at 
                   East Midlands Gateway and park along the inclined road leading 
                   up to the crash gate. By bus, take the Skylink Express, Skylink Nottingham or Skylink Leicester/Derby 
                   to East Midlands Gateway (4th stop from the terminal). Once you are there, follow the Airport 
-                  Trail Path along the northern perimeter for roughly 11 minutes (0.6 miles). It is possible to only walk to 
-                  this spot, however it would take upwards of an hour to reach and so is not recommended.</p>
+                  Trail Path along the northern perimeter for roughly 11 minutes (0.6 miles). It is possible to walk to 
+                  this spot from the terminal, however it would take upwards of an hour to reach and so is not recommended.</p>
                 <i class="fa fa-camera" aria-hidden="true" 
                 style="margin-top:3px;float:left;margin-left:5px;color:#296c92"></i>
-                <p class="locationtext">At this spot you will see aircraft touching down on runway 27 as well as departures 
+                <p class="locationtext"><b>What will I see?</b> At this spot you will see aircraft touching down on runway 27 as well as departures 
                   from runway 09. You will also have a view of the Eastern Apron as well as aircraft taxiing to/from the runway.</p>
                 <i class="fa fa-info-circle" aria-hidden="true" 
                 style="margin-top:3px;float:left;margin-left:5px;color:#296c92"></i>
-                <p class="locationtext">This spot is best for lighting on Summer evenings after 17:00 and 
+                <p class="locationtext"><b>Additional Info:</b> This spot is best for lighting on Summer evenings after 17:00 and 
                   summer mornings before 09:00.<br>A ladder is useful here since the fence is high, however the holes 
                   in the fence are large enough to take pictures through using most cameras.<br>A focal length of 70-300mm 
                   would best suit this spot.<br>The nearest restrooms are at the East Midlands Gateway bus stop and the 
