@@ -236,6 +236,106 @@ function myFunction2() {
                   in the fence are large enough to take pictures through using most cameras.<br>A focal length of 70-300mm 
                   would best suit this spot.<br>The nearest restrooms are at the East Midlands Gateway bus stop and the 
                   nearest shops are at the main terminal itself.</p>
+                <img src="spot1location.png" class="spotlocationimage">
+                <style>
+                  * {
+                    box-sizing: border-box;
+                  }
+                  body {
+                    margin: 0;
+                    font-family: Arial;
+                  }
+                  .column {
+                    float: left;
+                    width: 25%;
+                    padding-left: 1px;
+                    padding-right: 1px;
+                    padding-bottom: 15px;
+                  }
+                  @media screen and (max-width:480px) {
+                    .column {
+                    float: left;
+                    width: 50%;
+                    padding: 1px;
+                  }
+                  #imgtext {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 15px;
+                    color: white;
+                    font-size: 5px;
+                  }
+                  }
+                  .column img {
+                    opacity: 0.8; 
+                    cursor: pointer; 
+                  }
+                  .column img:hover {
+                    opacity: 1;
+                  }
+                  .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
+                  .container {
+                    position: relative;
+                    display: none;
+                  }
+                  @media screen and (min-width:480px) {
+                  #imgtext {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 15px;
+                    color: white;
+                    font-size: 20px;
+                  }
+                  .column img:hover {
+                    opacity: 1;
+                    transition: 0.8s ease;
+                    border-bottom: 5px solid #296c92;
+                  }
+                  }
+                  .closebtn {
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    color: white;
+                    font-size: 35px;
+                    cursor: pointer;
+                  }
+                  </style>
+                  </head>
+                  <body>
+                  <div class="row">
+                    <div class="column">
+                      <img src="banner1.png" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction3(this);">
+                    </div>
+                    <div class="column">
+                      <img src="banner2.jpeg" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction3(this);">
+                    </div>
+                    <div class="column">
+                      <img src="banner3.jpeg" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction3(this);">
+                    </div>
+                    <div class="column">
+                      <img src="spotbanner1.jpeg" alt="Credit to (Photographer)" style="width:100%" onclick="myFunction3(this);">
+                    </div>
+                  </div>
+                  
+                  <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                  </div>
+                  <script>
+                  function myFunction3(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                  }
+                  </script></body>
               </div></div></div>
             <div class="containerspotting"> 
               <button onclick="myFunction('showspots2')" class="btnspotting2 block black">East Midlands Gateway</button>
