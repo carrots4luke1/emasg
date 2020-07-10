@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="stylesheetnav.css">
+          <div class="bar fixed white" id="Navbar">
+              <div content="device-width"></div>
+                  <div align="left"><a href="index.html"><img class="logo" src="site-logo.png" alt="East Midlands Spotting Guide"></a>   
+            <a href="index.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="spottinglocations.html">Spots</a>
+            <a href="news.html">News</a></div>
+            <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("Navbar");
+    if (x.className === "bar fixed white") {
+      x.className += " responsive";
+    } else {
+      x.className = "bar fixed white";
+    }
+  }
+  </script>
+  </body>
+  <style>
+    .phonepreview {
+      float: left;
+      width:25%;
+      margin-top:10px;
+      margin-right:20px;
+    }
+    .cardfr {
+      background-color: white;
+      padding: 20px;
+      padding-top: 2.5px;
+      margin-top: 20px;
+    }
+    .flightradartitle {
+      color: #296c92;
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 30px;
+      padding-top:10px;
+      height: 1px;
+      border-bottom: 5px solid #296c92;
+      content: "";
+      display: table-cell;
+    }
+    .textflightradar {
+      font-size: 20px;
+    }
+    @media screen and (max-width:480px) {
+    .flightradartitle {
+      color: #296c92;
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 17px;
+      padding-top:10px;
+      height: 1px;
+      border-bottom: 2px solid #296c92;
+      content: "";
+      display: table-cell;
+    }
+    .phonepreview {
+      float: left;
+      width:45%;
+      margin-top:10px;
+      margin-right:20px;
+    }
+    .textflightradar {
+      font-size: 10px;
+    }
+    }
+  </style>
+  <div class="cardfr">
+  <img class="phonepreview" src="flightradarss.PNG">
+  <h3 class="flightradartitle">Using FlightRadar24</h3>
+  <p class="textflightradar">FlightRadar24 is a must-have application for any plane spotter.</p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  </div>
+    </div>
+    </body>
